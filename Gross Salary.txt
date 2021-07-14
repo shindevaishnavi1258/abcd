@@ -1,0 +1,29 @@
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Maxmin
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+           Scanner input = new Scanner(System.in);
+           int testcases = input.nextInt();
+           double HRA;
+           double DA;
+           for(int i = 0 ; i < testcases; i++){
+            int basicSalary = input.nextInt();
+            if(basicSalary > 1500)
+            {
+                HRA = 500;
+                DA = basicSalary * 0.98;
+            }else
+            {
+                HRA = basicSalary * 0.1;
+                DA = basicSalary * 0.9;
+            }
+            double result = basicSalary + HRA + DA;
+            System.out.println(result);
+        }
+	}
+}
