@@ -1,0 +1,28 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class IdShip {
+	public static void main (String[] args) throws java.lang.Exception {
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while(t-->0) {
+		    char ch = sc.next().charAt(0);
+		    if(ch=='B' || ch=='b'){
+		        System.out.println("BattleShip");
+		    }
+		    if(ch=='C' || ch=='c'){
+		        System.out.println("Cruiser");
+		    }
+		    if(ch=='D' || ch=='d'){
+		        System.out.println("Destroyer");
+		    }
+		    if(ch=='F' || ch=='f'){
+		        System.out.println("Frigate");
+		    }
+		    
+		}
+		
+		
+	}
+}
